@@ -1,0 +1,15 @@
+
+.start{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 25px;
+    color:red;
+}
+.hide {
+    display: none;
+}
+.car {
+    width:70px;
+    height:150px;
+    background: transparent url('./image/Bentley.png') center / cover no-repeat;
+}
