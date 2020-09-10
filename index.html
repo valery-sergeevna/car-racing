@@ -6,12 +6,39 @@
 </head>
 
 <body>
-    <div class="scores"></div>
     <div class="game">
-        <div class="start">Чтобы начать игру, кликни сюда!</div>
-        <div class="game-area"></div>
+        <div class="game-settings">
+            <div class="btn-container">
+                <h2>Choose game level</h2>
+                <button class="btn easy active">Easy Level</button>
+                <button class="btn aver">Average Level</button>
+                <button class="btn hard">Hard Level</button>
+            </div>
+            <h2>Choose game car</h2>
+            <div class="car-container">
+                <img src='image/player.png' class="car-img one active"></img>
+                <img src='image/enemy2.png' class="car-img two"></img>
+                <img src='image/enemy1.png' class="car-img three"></img>
+            </div>
+            <div class="start">
+                Start
+            </div>
+        </div>
+        <div class="grass">
+            <div class="scores"></div>
+            <div class="game-area"></div>
+        </div>
     </div>
-
+    <div class="modal">
+        <div class="modal-dialog">
+            <span class="close">&#10006;</span>
+            <h3>You broke the previous record!</h3>
+            <div class="max-score">
+                <img src="image/golden-cup.png" alt="">
+                <span class='max'>: 0000</span>
+            </div>
+        </div>
+    </div>
     <script src="./script.js"></script>
 </body>
 
