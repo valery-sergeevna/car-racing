@@ -126,7 +126,7 @@ const startGame = () => {
         const line = document.createElement('div');
         line.classList.add('line');
         line.style.top = (i * 100) + 'px';
-        line.y = i * 100;
+        line.y = i * 110;
         gameArea.append(line);
     }
     //create enemies
