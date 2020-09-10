@@ -134,6 +134,20 @@ h2{
     border-left: 8px solid rgb(182, 182, 182);
     border-right: 8px solid rgb(182, 182, 182);
 }
+.count{
+    position: absolute;
+    top: 30%;
+    left: 120px;
+    transform: translate(0, -50%);
+    font-size: 150px;
+    color:red;
+    z-index: 500;
+    width: 110px;
+    height:110px;
+}
+.count.hide{
+    display: none;
+}
 .grass{
     width:420px;
     height:100%;

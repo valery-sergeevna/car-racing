@@ -7,6 +7,7 @@ const score = document.querySelector('.scores'),
 const audio = document.createElement('audio'),
     lights = document.createElement('audio'),
     crash = document.createElement('audio');
+const count = document.createElement('img');
 
 //play music and motor car
 const playMusic = () => {
@@ -24,6 +25,7 @@ const playCrashSound = () => {
     crash.volume = 1;
     crash.play();
 };
+
 
 //hide modal with max Scores
 document.querySelector('.modal').addEventListener('click', (e) => {
@@ -112,6 +114,13 @@ const startGame = () => {
     gameArea.innerHTML = '';
     playMusic();
 
+    //create traffic lights
+    count.classList.add('count');
+    count.src = './image/red-light.png';
+    gameArea.append(count);
+    setTimeout(() => count.src = './image/yel-light.png', 3000);
+    setTimeout(() => count.src = './image/green-light.png', 6000);
+    setTimeout(() => count.classList.add('hide'), 7000);
     //create lines
     for (let i = 0; i < getQuantityElements(100); i++) {
         const line = document.createElement('div');
