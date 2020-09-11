@@ -96,6 +96,7 @@ h2{
     background-color: black;
     color:white;
     transition: all .1s linear;
+    margin-bottom: 5px;
 
 }
 .btn:hover{
